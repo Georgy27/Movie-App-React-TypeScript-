@@ -7,15 +7,15 @@ const Wrapper = styled.div`
   gap: 18rem;
 `;
 
-const Series = () => {
+const Movies = () => {
   return (
     <Container>
       <Wrapper>
         <Navbar />
-        <h1>Series</h1>
+        <h1>Movies</h1>
       </Wrapper>
     </Container>
   );
 };
 
-export default Series;
+export default Movies;

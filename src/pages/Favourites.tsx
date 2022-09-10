@@ -6,16 +6,15 @@ const Wrapper = styled.div`
   display: flex;
   gap: 18rem;
 `;
-
-const Series = () => {
+const Favourites = () => {
   return (
     <Container>
       <Wrapper>
         <Navbar />
-        <h1>Series</h1>
+        <h1>Favourites Movies</h1>
       </Wrapper>
     </Container>
   );
 };
 
-export default Series;
+export default Favourites;

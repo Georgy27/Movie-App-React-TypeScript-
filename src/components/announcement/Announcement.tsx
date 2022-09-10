@@ -1,4 +1,4 @@
-import { Container, MovieGenre } from "../../GlobalStyles";
+import { Container, Rating } from "../../GlobalStyles";
 import styled from "styled-components";
 import Navbar from "../navbar/Navbar";
 
@@ -55,7 +55,7 @@ const Announcement = () => {
       <Wrapper>
         <Navbar />
         <MovieInfo>
-          <MovieGenre>Science Fiction</MovieGenre>
+          <Rating>Science Fiction</Rating>
           <MovieTitle>Godzila vs. Kong</MovieTitle>
           <MovieDescription>
             In a time when monsters walk the Earth, humanity’s fight for its

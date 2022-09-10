@@ -1,5 +1,5 @@
-import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
 import TvIcon from "@mui/icons-material/Tv";
@@ -16,7 +16,6 @@ const Wrapper = styled.div`
   background: rgba(29, 29, 29, 0.5);
   box-shadow: 0px 40px 40px 8px rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(2.4rem);
-  -webkit-backdrop-filter: blur() (2.4rem);
 `;
 
 const Categories = styled.ul`
@@ -44,16 +43,24 @@ const Navbar = () => {
       <Wrapper>
         <Categories>
           <CategoryItem>
-            <HomeIcon />
+            <Link to="/">
+              <HomeIcon />
+            </Link>
           </CategoryItem>
           <CategoryItem>
-            <LocalMoviesIcon />
+            <Link to="/movies">
+              <LocalMoviesIcon />
+            </Link>
           </CategoryItem>
           <CategoryItem>
-            <TvIcon />
+            <Link to="/series">
+              <TvIcon />
+            </Link>
           </CategoryItem>
           <CategoryItem>
-            <BookmarkIcon />
+            <Link to="/favourites">
+              <BookmarkIcon />
+            </Link>
           </CategoryItem>
         </Categories>
       </Wrapper>
